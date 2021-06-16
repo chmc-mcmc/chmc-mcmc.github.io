@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  optimization1-en
+ </title>
+ <link href="HTMLFiles/optimization1-en.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Text">
+ Firstly, let us clear the cached variables, and set optionally random seed.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/optimization1-en_1.gif" alt="optimization1-en_1.gif" width="149" height="44" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ We can define some helper functions to simplify the calling convention.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/optimization1-en_2.gif" alt="optimization1-en_2.gif" width="393" height="42" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Now, it is time to define the object, its gradient, and hessian.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/optimization1-en_3.gif" alt="optimization1-en_3.gif" width="510" height="128" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Now, we optimize from x0.<br />1. gradient descent<br /><span><span><img src="HTMLFiles/optimization1-en_4.png" alt="optimization1-en_4.png" width="99" height="41" style="vertical-align:middle" /></span></span><br />2. Newton<br /><span><span><img src="HTMLFiles/optimization1-en_5.png" alt="optimization1-en_5.png" width="162" height="47" style="vertical-align:middle" /></span></span><br />3. Anti-GD<br /><span><span><img src="HTMLFiles/optimization1-en_6.png" alt="optimization1-en_6.png" width="162" height="47" style="vertical-align:middle" /></span></span><br />The Newton algorithm is the intermediate between the gradient descent and &ldquo;anti-gradient-descent&rdquo;.<br />Using bisect&nbsp;&nbsp;(exact exact line search) to find a suitable step size &delta;. 
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/optimization1-en_7.png" alt="optimization1-en_7.png" width="771" height="521" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Carry out the optimization.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/optimization1-en_8.gif" alt="optimization1-en_8.gif" width="406" height="88" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Display the trajectories of the optimizations.<br />It is obvious that the gradient descent and the anti-gradient-descent are two extremes. The preferential trajectory of the gradient descent is <span style='font-style: italic;'>y</span> axis, and <span style='font-style: italic;'>x</span> axis for anti-gradient-descent. The anti-gradient-descent is seldom used for its higher computational complexity and slow convergence than the Newton algorithm.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/optimization1-en_9.png" alt="optimization1-en_9.png" width="799" height="65" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/optimization1-en_10.gif" alt="optimization1-en_10.gif" width="513" height="236" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ 
+</p>
+
+
+
+<table class='Text' frame='box' rules='all'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><a href="optimization1.nb" ><span class="HyperlinkInline">Notebook</span></a></span></td>
+  <td style='text-align: center;'><span><a href="optimization1.cdf" ><span class="HyperlinkInline">CDF</span></a></span></td>
+ </tr>
+</table>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>
